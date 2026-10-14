@@ -4,13 +4,12 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class AppTest {
 
     @Test
-    public void testReverseString() {
+    public void testEvenOdd() {
         App obj = new App();
 
-        assertEquals("olleH", obj.reverseString("Hello"));
-        assertEquals("avaJ", obj.reverseString("Java"));
-        assertEquals("", obj.reverseString(""));
-        assertEquals("a", obj.reverseString("a"));
-        assertEquals("321", obj.reverseString("123"));
+        assertEquals("Even", obj.checkEvenOdd(8));
+        assertEquals("Odd", obj.checkEvenOdd(7));
+        assertEquals("Even", obj.checkEvenOdd(0));
+        assertEquals("Odd", obj.checkEvenOdd(-3));
     }
 }
